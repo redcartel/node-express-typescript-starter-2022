@@ -5,9 +5,9 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "start": "NODE_PATH=./dist node dist/src/index.js",
-    "dev": "NODE_PATH=./ nodemon -w .env -w src src/index.ts",
-    "test": "NODE_ENV=test jest",
+    "start": "cross-env NODE_PATH=./dist node dist/src/index.js",
+    "dev": "cross-env NODE_PATH=./ nodemon -w .env -w src src/index.ts",
+    "test": "cross-env NODE_ENV=test jest",
     "test:watch": "cross-env NODE_ENV=test jest --watch"
   },
   "repository": {
