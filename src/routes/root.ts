@@ -1,10 +1,10 @@
-import express from 'express';
-import getRoot from 'src/controllers/root/getRoot';
-import postRoot from 'src/controllers/root/postRoot';
+import express from 'express'
+import getRoot from 'src/controllers/root/getRoot'
+import postRoot from 'src/controllers/root/postRoot'
 
-const root = express.Router();
+const root = express.Router()
 
-root.get('/', getRoot);
-root.post('/', postRoot);
+root.get('/', getRoot)
+root.post('/', postRoot)
 
-export default root;
+export default root

@@ -1,11 +1,13 @@
+import dotenv from 'dotenv'
+dotenv.config()
+
 /**
- * Global config object specified with:
- * 
- *  property: process.env['ENVIRONMENT_VARIABLE'] ?? 'default'
+ * Pattern for config is:
+ * key: proces.env['KEY'] ?? default
  */
 const config = {
-    nodeEnv: process.env['NODE_ENV'] ?? 'production',
-    port: parseInt(`${process.env['PORT']}`) ?? 3000,
+    port: process.env['PORT'] ?? 3000,
+    nodeEnv: process.env['NODE_ENV'] ?? 'production'
 }
 
-export default config;
+export default config

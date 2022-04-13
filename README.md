@@ -1,29 +1,68 @@
 # Node Express Typescript Starter for 2022
 
-*"As unopinionated as I could make it"*
+*"A minimally opinionated node & express starter for 2022"*
 
-A minimal but useful node / express / typescript starter template with
-testing and best practices middleware.
+A minimal but useful node & express & typescript starter template with some default
+middleware and testing.
 
 It has a small set of features I consider essential and otherwise stays out of your way. It should be ready to deploy out of the box, at least for simple deployments.
 
-A `GET` request to `/` will respond with the value of NODE_ENV or an empty
-response if the environment is production
-
-A `POST` request to `/` will echo any json sent in the request body
-
-`throw {status: 401, message: 'unauthorized'}` or `throw 401` resolve to the specified status.
-
-`npm run dev` - run the development server
-
-`npm test` - run the tests
-
-`npm run build` - build the server
-
-`npm start` - run the server
+## Setup & use:
 
 Rename .env.sample to .env & Set your configuration and secrets there and
-then apply them to config.ts
+then apply them to config.js
 
-Deployment has been tested on DigitalOcean's app platform
-and on Heroku's local environment.
+`npm run dev` - Run the development server.
+
+`npm test` - Run tests.
+
+`npm test:watch` - Run tests when files update.
+
+`npm run build` - Builds the server.
+
+`npm start` - Runs the server.
+## Opinions:
+
+* Imports that look like `import module from 'src/directory/file'` rather than relative paths.
+
+* json, cors, helmet, and morgan by default.
+
+* Error handling & 404 middleware are custom and modifiable. Read the source for features.
+
+* Jest & supertest for simple tests of endpoints.
+
+## Lack of opinions:
+
+* No assumptions about your database or lack thereof.
+
+* `.eslintrc.json` is fairly permissive.
+
+* No forced linting or any other babysitting.
+
+## Default endpoints:
+
+A `GET` request to `/` will respond with the value of NODE_ENV or an empty response if the environment is production.
+
+A `POST` request to `/` will echo any json sent in the request body.
+
+## Deployment
+
+Has been tested on DigitalOcean's app PaaS.
+
+Docker coming soon.
+
+# Visual Studio Code
+
+For code completion to automatically create absolute path imports, you may need to create a `./.vscode/settings.json` file with:
+
+```
+{
+    "typescript.preferences.importModuleSpecifier": "non-relative"
+}
+```
+
+For the time being, I am keeping editor-specific customizations out of the repo.
+
+## Help out
+
+Feedback and contributions are very welcome.
