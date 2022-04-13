@@ -51,7 +51,7 @@ Has been tested on DigitalOcean's app PaaS.
 
 Docker coming soon.
 
-# Visual Studio Code
+## Visual Studio Code
 
 For code completion to automatically create absolute path imports, you may need to create a `./.vscode/settings.json` file with:
 
@@ -60,8 +60,6 @@ For code completion to automatically create absolute path imports, you may need 
     "typescript.preferences.importModuleSpecifier": "non-relative"
 }
 ```
-
-For the time being, I am keeping editor-specific customizations out of the repo.
 
 ## Help out
 
