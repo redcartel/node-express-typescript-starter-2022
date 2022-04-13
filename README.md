@@ -1,6 +1,6 @@
 # Node Express Typescript Starter for 2022
 
-*"A minimally opinionated node & express starter for 2022"*
+*"A minimally opinionated express & typescript starter for 2022"*
 
 A minimal but useful node & express & typescript starter template with some default
 middleware and testing.

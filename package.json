@@ -1,8 +1,10 @@
 {
   "name": "express-typescript-starter-2022",
   "version": "1.0.1",
-  "description": "",
-  "main": "src/index.ts",
+  "description": "A minimally opinionated node & express & typescript starter for 2022",
+  "main": "dist/index.js",
+  "author": "Carter Adams",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "start": "cross-env NODE_PATH=./dist node dist/src/index.js",
@@ -14,9 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/redcartel/node-express-typescript-starter-2022.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/redcartel/node-express-typescript-starter-2022/issues"
   },
