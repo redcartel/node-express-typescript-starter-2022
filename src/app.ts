@@ -12,8 +12,10 @@ app.use(helmet());
 app.use(express.json());
 app.use(morgan('tiny'));
 
+// TOP LEVEL ROUTES HERE
 app.use('/', root);
 
+// KEEP THESE AFTER THE ROUTES
 app.use(fourOhFour);
 app.use(errorHandler);
 

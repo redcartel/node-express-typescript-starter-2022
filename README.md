@@ -16,10 +16,12 @@ A `POST` request to `/` will echo any json sent in the request body
 
 `npm test` - run the tests
 
-`npm run build` - builds the server
+`npm run build` - build the server
 
 `npm start` - run the server
 
+Rename .env.sample to .env & Set your configuration and secrets there and
+then apply them to config.ts
 
 Uses node >= 14, deployment has been tested on DigitalOcean's app platform
 and on Heroku's local environment.
