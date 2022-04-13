@@ -20,6 +20,10 @@
     "url": "https://github.com/redcartel/node-express-typescript-starter-2022/issues"
   },
   "homepage": "https://github.com/redcartel/node-express-typescript-starter-2022#readme",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
