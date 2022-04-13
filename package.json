@@ -5,9 +5,9 @@
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon -w .env -w src src/index.ts",
-    "test": "NODE_ENV=test jest"
+    "start": "NODE_PATH=./dist node dist/src/index.js",
+    "dev": "NODE_PATH=./ nodemon -w .env -w src src/index.ts",
+    "test": "NODE_ENV=test NODE_PATH=./ jest"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/redcartel/node-express-typescript-starter-2022#readme",
   "jest": {
     "preset": "ts-jest",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "rootDir": "src/tests"
   },
   "dependencies": {
     "cors": "^2.8.5",

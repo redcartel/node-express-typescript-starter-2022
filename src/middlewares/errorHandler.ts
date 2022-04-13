@@ -1,40 +1,26 @@
 import { NextFunction, Request, Response } from "express";
-import config from '../config';
+import config from 'src/config';
 
-/**
- * Emit correct errors for throw { status, message } or throw statusCode
- * log error and emit status 500 for other errors
- */
-const errorHandler = (err : any, req : Request, res : Response, next: NextFunction) => {
+const errorHandler = (err: any, req: Request, res: Response, next: NextFunction) => {
+    console.error('🛑 errorHandler middleware 🛑');
+    console.error(err);
     try {
-        // handle error of form (throw { status, message })
-        if (err.hasOwnProperty('status')) {
-            return res.status(err.status).json({
-                message: err.message ?? ''
+        if ('name' in err && config.nodeEnv !== 'production') {
+            return res.status(500).json({
+                name: err.name,
+                message: err.message ? err.message : 'unknown error',
+                stack: err.stack ? err.stack : null
             });
-        }
-        // handle numeric error (throw http code)
-        else if (parseInt(`${err}`) >= 200 && parseInt(`${err}`) < 600) {
-            return res.status(parseInt(`${err}`)).json({ message: `${err}` });
-        }
-        // handle generic error
-        else {
-            if (config.nodeEnv === 'production') {
-                console.error(`${err}`.slice(0, 512));
-            }
-            else {
-                console.error(err);
-            }
-            return res.status(500).json({ message: '' });
         }
     }
     catch (e) {
-        console.error('An error happened while processing an error');
-        console.error(e)
-        console.error('')
-        console.error(err);
-        return res.status(500).json({ message: '' });
+        // pass
     }
+    return res.status(500).json({
+        name: 'Error',
+        message: 'unknown error',
+        stack: null
+    });
 }
 
 export default errorHandler;

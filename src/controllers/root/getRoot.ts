@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import config from '../../config'
+import config from 'src/config'
 
 /**
  * Health check endpoint

@@ -1,6 +1,6 @@
 import express from 'express';
-import getRoot from '../controllers/root/getRoot';
-import postRoot from '../controllers/root/postRoot';
+import getRoot from 'src/controllers/root/getRoot';
+import postRoot from 'src/controllers/root/postRoot';
 
 const root = express.Router();
 
