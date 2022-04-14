@@ -3,6 +3,7 @@
     "compilerOptions": {
       "rootDir": "../..",
       "baseUrl": "../..",
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "resolveJsonModule": true
     },
   }
