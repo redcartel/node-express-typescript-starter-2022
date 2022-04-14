@@ -28,7 +28,7 @@ For code completion to automatically create absolute path imports, you may need 
 
 ```
 {
-    "javascript.preferences.importModuleSpecifier": "non-relative"
+    "typescript.preferences.importModuleSpecifier": "non-relative"
 }
 ```
 
