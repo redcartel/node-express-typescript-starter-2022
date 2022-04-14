@@ -1,5 +1,3 @@
-import { pathsToModuleNameMapper } from 'ts-jest/utils';
-
 const config = {
     preset: "ts-jest",
     modulePathIgnorePatterns: ["<rootDir>/dist/"],
