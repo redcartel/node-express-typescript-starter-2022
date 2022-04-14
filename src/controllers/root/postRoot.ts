@@ -1,9 +1,9 @@
-import { Request, Response } from "express"
+import { RequestHandler } from "express"
 
 /**
  * Echo endpoint
  */
-const postRoot = (req : Request, res : Response) => {
+const postRoot : RequestHandler = (req, res) => {
     const json = req.body
     res.json(json)
 }

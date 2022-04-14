@@ -1,11 +1,11 @@
-import { NextFunction, Request, Response } from "express"
+import { ErrorRequestHandler } from "express"
 import config from 'src/config'
 
 /**
- * Return 500 when errors are raised.
+ * 500 response & log when errors are raised.
  */
-const errorHandler = (err: any, req: Request, res: Response) => {
-    console.error(err);
+const errorHandler : ErrorRequestHandler = (err, req, res) => {
+    console.error('');
     if (config.nodeEnv === 'production') {
         return res.status(500).json({message: 'unknown error'});
     }
