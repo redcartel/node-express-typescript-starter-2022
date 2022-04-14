@@ -1,35 +1,16 @@
 import { NextFunction, Request, Response } from "express"
 import config from 'src/config'
 
-const errorHandler = (err: any, req: Request, res: Response, next: NextFunction) => {
-    try {
-        // handle error of form (throw { status, ... })
-        if (err.hasOwnProperty('status')) {
-            return res.status(err.status).json({
-                message: err.message ?? ''
-            })
-        }
-        // handle numeric error (throw http code)
-        else if (parseInt(`${err}`) >= 200 && parseInt(`${err}`) < 600) {
-            return res.status(parseInt(`${err}`)).json({ message: `${err}` })
-        }
-        // handle generic error
-        else {
-            if (config.nodeEnv === 'production') {
-                console.error(`${err}`.slice(0, 512))
-            }
-            else {
-                console.error(err)
-            }
-            return res.status(500).json({ message: '' })
-        }
+/**
+ * Return 500 when errors are raised.
+ */
+const errorHandler = (err: any, req: Request, res: Response) => {
+    console.error(err);
+    if (config.nodeEnv === 'production') {
+        return res.status(500).json({message: 'unknown error'});
     }
-    catch (e) {
-        console.error('An error happened while processing an error')
-        console.error(e)
-        console.error('')
-        console.error(err)
-        return res.status(500).json({ message: '' })
+    else {
+        return res.status(500).json({message: `${err}`});
     }
 }
 

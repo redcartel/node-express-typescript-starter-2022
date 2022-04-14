@@ -1,13 +1,8 @@
-# Node Express Typescript Starter for 2022
+# Create Express API with Typescript
 
-*"A minimally opinionated express & typescript starter for 2022"*
+*"A minimally opinionated typescript & express starter for 2022"*
 
-A minimal but useful node & express & typescript starter template with some default
-middleware and testing.
-
-It has a small set of features I consider essential and otherwise stays out of your way. It should be ready to deploy out of the box, at least for simple deployments.
-
-## Setup & use:
+A minimal but useful typescript & express starter template with some default middleware and testing.
 
 Rename .env.sample to .env & Set your configuration and secrets there and
 then apply them to config.js
@@ -21,41 +16,19 @@ then apply them to config.js
 `npm run build` - Builds the server.
 
 `npm start` - Runs the server.
-## Opinions:
-
-* Imports that look like `import module from 'src/directory/file'` rather than relative paths.
-
-* json, cors, helmet, and morgan by default.
-
-* Error handling & 404 middleware are custom and modifiable. Read the source for features.
-
-* Jest & supertest for simple tests of endpoints.
-
-## Lack of opinions:
-
-* No assumptions about your database or lack thereof.
-
-* `.eslintrc.json` is fairly permissive.
-
-* No forced linting or any other babysitting.
-
 ## Default endpoints:
 
 A `GET` request to `/` will respond with the value of NODE_ENV or an empty response if the environment is production.
 
 A `POST` request to `/` will echo any json sent in the request body.
 
-## Deployment
-
-Deployment has been tested DigitalOcean's app PaaS with linked github & with the Docker image.
-
 ## Visual Studio Code
 
-For code completion to automatically create absolute path imports, you may need to create a `./.vscode/settings.json` file with:
+For code completion to automatically create absolute path imports, you may need to create a `./.vscode/settings.json` file with
 
 ```
 {
-    "typescript.preferences.importModuleSpecifier": "non-relative"
+    "javascript.preferences.importModuleSpecifier": "non-relative"
 }
 ```
 

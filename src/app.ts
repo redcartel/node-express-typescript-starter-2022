@@ -2,22 +2,22 @@ import express from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
-import fourOhFour from 'src/middlewares/fourOhFour'
 import errorHandler from 'src/middlewares/errorHandler'
 import root from 'src/routes/root'
+import fourOhFour from 'src/middlewares/fourOhFour'
 
 const app = express()
 
-// MOST MIDDLEWARE HERE
+// Apply most middleware first
 app.use(express.json())
 app.use(cors())
 app.use(helmet())
 app.use(morgan('tiny'))
 
-// TOP LEVEL ROUTES HERE
+// Apply routes before error handling
 app.use('/', root)
 
-// ERROR HANDLERS BELOW ROUTES
+// Apply error handling last
 app.use(fourOhFour)
 app.use(errorHandler)
 
