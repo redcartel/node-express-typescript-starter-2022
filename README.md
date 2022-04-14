@@ -4,9 +4,6 @@
 
 A minimal but useful typescript & express starter template with some default middleware and testing.
 
-Rename .env.sample to .env & Set your configuration and secrets there and
-then apply them to config.js
-
 `npm run dev` - Run the development server.
 
 `npm test` - Run tests.
