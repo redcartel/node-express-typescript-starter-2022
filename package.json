@@ -1,6 +1,6 @@
 {
-  "name": "express-typescript-starter-2022",
-  "version": "1.1.0",
+  "name": "node-express-typescript-starter-2022",
+  "version": "1.1.1",
   "description": "A minimally opinionated typescript & express starter for 2022",
   "main": "dist/src/index.js",
   "author": "Carter Adams",

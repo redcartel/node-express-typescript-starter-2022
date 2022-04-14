@@ -1,4 +1,4 @@
-# Create Express API with Typescript
+# Typescript & Express API Template
 
 *"A minimally opinionated typescript & express starter for 2022"*
 
