@@ -1,0 +1,8 @@
+// Fixes import problems in jest tests
+{
+    "compilerOptions": {
+      "rootDir": "../..",
+      "baseUrl": "../..",
+      "esModuleInterop": true
+    },
+  }
