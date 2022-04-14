@@ -47,9 +47,7 @@ A `POST` request to `/` will echo any json sent in the request body.
 
 ## Deployment
 
-Has been tested on DigitalOcean's app PaaS.
-
-Docker coming soon.
+Deployment has been tested DigitalOcean's app PaaS with linked github & with the Docker image.
 
 ## Visual Studio Code
 
