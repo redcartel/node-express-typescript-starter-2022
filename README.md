@@ -19,10 +19,6 @@ A `GET` request to `/` will respond with the value of NODE_ENV or an empty respo
 
 A `POST` request to `/` will echo any json sent in the request body.
 
-## Visual Studio Code
-
-For code completion to automatically create absolute path imports, you may need to create a `./.vscode/settings.json` file with
-
 ## Help out
 
 Feedback and contributions are very welcome.
