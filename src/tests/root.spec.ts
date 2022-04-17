@@ -1,5 +1,5 @@
 import supertest from 'supertest'
-import app from 'src/app'
+import app from '../app'
 
 test('get root returns 200 and data', async () => {
     const result = await supertest(app).get('/')

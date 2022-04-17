@@ -2,9 +2,9 @@ import cors from 'cors'
 import express from 'express'
 import helmet from 'helmet'
 import morgan from 'morgan'
-import errorHandler from 'src/middlewares/errorHandler'
-import fourOhFour from 'src/middlewares/fourOhFour'
-import root from 'src/routes/root'
+import errorHandler from './middlewares/errorHandler'
+import fourOhFour from './middlewares/fourOhFour'
+import root from './routes/root'
 
 const app = express()
 

@@ -1,5 +1,5 @@
 import { RequestHandler } from 'express'
-import config from 'src/config'
+import config from '../../config'
 
 /**
  * Health check endpoint

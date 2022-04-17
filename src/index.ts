@@ -1,5 +1,5 @@
-import config from 'src/config'
-import app from 'src/app'
+import config from './config'
+import app from './app'
 
 app.listen(config.port, ()=>{
     console.log(`🚀 ${config.name} ${config.version} 🚀`)
