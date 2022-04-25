@@ -10,15 +10,11 @@ test('get root returns 200 and data', async () => {
 test('post root echoes json', async () => {
     const result = await supertest(app).post('/').send(
         {
-            'test': 'value',
-            'nested': {
-                'test': 'value'
-            }
+            'test': 'value'
         })
     expect(result.statusCode).toEqual(200)
     expect(result.body).toBeTruthy()
     expect(result.body.test).toBe('value')
-    expect(result.body.nested.test).toBe('value')
 })
 
 test('404 & json returned from nonexistent route', async () => {

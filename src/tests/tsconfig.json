@@ -1,8 +1,0 @@
-// Fixes import problems in jest tests
-{
-  "compilerOptions": {
-    "rootDir": "../..",
-    "esModuleInterop": true,
-    "resolveJsonModule": true
-  },
-}
