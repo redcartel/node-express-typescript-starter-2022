@@ -5,5 +5,4 @@ COPY tsconfig*.json ./
 RUN npm install
 COPY . ./
 RUN npm run build
-ENV NODE_PATH="./dist"
 CMD ["node", "dist/src/index.js"]
