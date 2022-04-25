@@ -1,8 +1,6 @@
-# Typescript & Express API Template
+# Node Express Typescript Starter for 2022
 
 *"A minimally opinionated typescript & express starter for 2022"*
-
-A minimal but useful typescript & express starter template with some default middleware and testing.
 
 `npm run dev` - Run the development server.
 
