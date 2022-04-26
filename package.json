@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/src/index.js",
-    "dev": "nodemon -w .env -w src --exec npx ts-node ./src/index.ts",
+    "dev": "ts-node-dev --watch .env, src src/index.ts",
     "test": "cross-env NODE_ENV=test jest",
     "test:watch": "cross-env NODE_ENV=test jest --watch"
   },
@@ -29,9 +29,8 @@
     "@types/jest": "^27.4.1",
     "@types/supertest": "^2.0.12",
     "jest": "^27.5.1",
-    "nodemon": "^2.0.15",
     "supertest": "^6.2.2",
     "ts-jest": "^27.1.4",
-    "ts-node": "^10.7.0"
+    "ts-node-dev": "^1.1.8"
   }
 }
