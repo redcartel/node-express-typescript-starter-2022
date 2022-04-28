@@ -2,6 +2,10 @@
 
 *"A minimally opinionated typescript & express starter for 2022"*
 
+## Usage:
+
+You should copy `.env.sample` to `.env` and then:
+
 `npm run dev` - Run the development server.
 
 `npm test` - Run tests.
