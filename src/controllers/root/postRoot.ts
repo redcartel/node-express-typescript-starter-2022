@@ -1,4 +1,5 @@
-import { RequestHandler } from "express"
+import { RequestHandler } from 'express'
+import app from '../../app'
 
 /**
  * Echo endpoint

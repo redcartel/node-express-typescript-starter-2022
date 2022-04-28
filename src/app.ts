@@ -3,8 +3,8 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import config from './config';
-import errorHandler from './middlewares/errorHandler';
-import fourOhFour from './middlewares/fourOhFour';
+import errorHandler from './middleware/errorHandler';
+import fourOhFour from './middleware/fourOhFour';
 import root from './routes/root';
 
 const app = express()

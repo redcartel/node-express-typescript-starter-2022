@@ -1,4 +1,4 @@
-import { ErrorRequestHandler } from "express"
+import { ErrorRequestHandler } from 'express'
 import config from '../config'
 
 /**
@@ -10,7 +10,7 @@ const errorHandler: ErrorRequestHandler = (err, req, res) => {
         message: config.nodeEnv === 'production' ?
             'unknown error' :
             `${err}`
-    });
+    })
 }
 
 export default errorHandler
