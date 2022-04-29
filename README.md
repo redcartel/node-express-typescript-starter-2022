@@ -10,7 +10,7 @@ You should copy `.env.sample` to `.env` and then:
 
 `npm test` - Run tests.
 
-`npm test:watch` - Run tests when files update.
+`npm run test:watch` - Run tests when files update.
 
 `npm run build` - Builds the server.
 
