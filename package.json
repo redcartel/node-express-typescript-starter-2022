@@ -10,7 +10,8 @@
     "start": "node dist/src/index.js",
     "dev": "ts-node-dev --watch .env, src src/index.ts",
     "test": "cross-env NODE_ENV=test jest",
-    "test:watch": "cross-env NODE_ENV=test jest --watch"
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "lint": "npx eslint src"
   },
   "dependencies": {
     "cors": "^2.8.5",
