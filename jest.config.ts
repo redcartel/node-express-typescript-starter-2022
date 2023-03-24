@@ -7,7 +7,7 @@ const config = {
         "json"
     ],
     moduleDirectories: [
-        '.',
+        __dirname,
         'src',
         'node_modules'
     ],

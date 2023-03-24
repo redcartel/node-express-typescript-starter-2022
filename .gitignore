@@ -26,6 +26,10 @@ yarn-error.log*
 .yarn-integrity
 *.tgz
 
+# coverage and logs
+coverage
+logs
+
 # IDEs
 .vscode
 .vscode-test
