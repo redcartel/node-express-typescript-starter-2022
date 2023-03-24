@@ -1,4 +1,4 @@
-# Node Express & Typescript Starter for 2022
+# Node Express & Typescript Starter for 2022 & 2023
 
 _"A minimally opinionated typescript & express starter for 2022 & 2023"_
 
