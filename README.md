@@ -2,6 +2,8 @@
 
 _"A minimally opinionated typescript & express starter for 2022 & 2023"_
 
+This template is also used by my utility create-my-express on npm.
+
 ## Usage:
 
 You should copy `.env.sample` to `.env` and then:
