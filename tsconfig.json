@@ -10,6 +10,9 @@
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
+  "include": [
+    "src/tests/**/*.ts"
+  ],
   "files": [
     "src/index.ts"
   ]
