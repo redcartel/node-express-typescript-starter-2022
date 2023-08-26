@@ -4,7 +4,7 @@ import config from '../../config'
 /**
  * Health check endpoint
  */
-const getRoot: RequestHandler = (req, res) => {
+const getRoot: RequestHandler = (_req, res) => {
     res.status(200).json({
         name: config.name,
         description: config.description,
