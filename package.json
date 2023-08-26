@@ -1,7 +1,7 @@
 {
   "name": "node-express-typescript-starter-2022",
   "version": "1.0.1",
-  "description": "A minimally opinionated typescript & express starter for 2022 & 2023",
+  "description": "A minimally opinionated typescript & express starter for 2023",
   "author": "Carter Adams <carteradams@gmail.com>",
   "license": "MIT",
   "main": "dist/src/index.js",
@@ -14,12 +14,14 @@
     "lint": "npx eslint src"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "helmet": "^6.0.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.4",
