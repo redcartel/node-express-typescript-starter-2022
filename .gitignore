@@ -1,7 +1,7 @@
 # build directory
 dist
 
-# dotenv environment variable files
+# environment variable files
 .env
 .env.development
 .env.production

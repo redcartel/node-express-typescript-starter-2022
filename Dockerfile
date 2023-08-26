@@ -1,8 +1,7 @@
-FROM node:16-alpine as ts-environment
+FROM node:18-alpine as ts-environment
 WORKDIR /usr/app
 
 COPY package.json ./
-
 COPY package-lock.json ./
 COPY tsconfig*.json ./
 
