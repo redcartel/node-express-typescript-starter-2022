@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "./src",
+    "./.env",
+    "./package.json",
+    "./tsconfig.json",
+    "./jest.config.ts"
+  ],
+  "ext": "*",
+  "exec": "dotenv -e .env ts-node ./src/index.ts"
+}
