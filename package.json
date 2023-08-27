@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "description": "A minimally opinionated typescript & express starter for 2023",
   "author": "Carter Adams <carteradams@gmail.com>",
-  "license": "MIT",
+  "license": "MIT-0",
+  "private": false,
   "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc",
