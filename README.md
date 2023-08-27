@@ -2,7 +2,13 @@
 
 _"A minimally opinionated typescript & express starter for 2022 & 2023"_
 
-This template is also used by my utility create-my-express on npm.
+The easy way to use this template:
+
+`yarn create my-express --typescript my-project`
+
+or
+
+`npx create-my-express --typescript my-project`
 
 ## Usage:
 
